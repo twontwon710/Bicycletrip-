@@ -102,3 +102,744 @@
   </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BicycleTrip - Ride the Psychedelic Wave</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+      background-size: 400% 400%;
+      animation: psychedelicBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes psychedelicBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    p.tagline {
+      font-size: 1rem;
+      margin-top: 0;
+      color: #ffeecc;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: #ff6f91;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Press Start 2P', cursive;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .roadmap {
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px dashed #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .stage {
+      margin-bottom: 2rem;
+    }
+
+    .stage h2 {
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+
+    .stage ul {
+      list-style: square;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+      padding-left: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .stage ul {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BicycleTrip</h1>
+    <p class="tagline">Ride the Psychedelic Wave on Solana</p>
+    <button id="connectWallet">Connect Wallet</button>
+  </header>
+
+  <section class="roadmap">
+    <h1>Tripmap</h1>
+
+    <div class="stage">
+      <h2>1. Microdose</h2>
+      <ul>
+        <li>Concept born: homage to Bicycle Day</li>
+        <li>Token & branding complete</li>
+        <li>Socials & community setup</li>
+        <li>TRIP token minted</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>2. Come-Up</h2>
+      <ul>
+        <li>Liquidity added</li>
+        <li>Website & memes go live</li>
+        <li>Contests & NFT airdrops</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>3. Peak Experience</h2>
+      <ul>
+        <li>DEX listings (Jupiter, Raydium)</li>
+        <li>Collabs & DAO launched</li>
+        <li>Merch drop</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>4. Integration</h2>
+      <ul>
+        <li>TripPoints system</li>
+        <li>NFT staking & events</li>
+        <li>Bicycle Day burn party</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>5. Eternal Vibes</h2>
+      <ul>
+        <li>Support psychedelic research</li>
+        <li>Bridge to other chains</li>
+        <li>Community decides next ride</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Made with cosmic vibes. Hofmann would be proud.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const connectWalletButton = document.getElementById('connectWallet');
+
+      async function connectWallet() {
+        if (window?.phantom?.solana?.isPhantom) {
+          try {
+            const resp = await window.phantom.solana.connect();
+            alert('Connected to wallet: ' + resp.publicKey.toString());
+          } catch (err) {
+            console.error(err);
+            alert('Wallet connection failed.');
+          }
+        } else {
+          alert('Phantom wallet not found. Please install it from https://phantom.app');
+        }
+      }
+
+      connectWalletButton.addEventListener('click', connectWallet);
+    });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BicycleTrip - Ride the Psychedelic Wave</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+      background-size: 400% 400%;
+      animation: psychedelicBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes psychedelicBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    p.tagline {
+      font-size: 1rem;
+      margin-top: 0;
+      color: #ffeecc;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: #ff6f91;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Press Start 2P', cursive;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .roadmap {
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px dashed #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .stage {
+      margin-bottom: 2rem;
+    }
+
+    .stage h2 {
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+
+    .stage ul {
+      list-style: square;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+      padding-left: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .stage ul {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BicycleTrip</h1>
+    <p class="tagline">Ride the Psychedelic Wave on Solana</p>
+    <button id="connectWallet">Connect Wallet</button>
+  </header>
+
+  <section class="roadmap">
+    <h1>Tripmap</h1>
+
+    <div class="stage">
+      <h2>1. Microdose</h2>
+      <ul>
+        <li>Concept born: homage to Bicycle Day</li>
+        <li>Token & branding complete</li>
+        <li>Socials & community setup</li>
+        <li>TRIP token minted</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>2. Come-Up</h2>
+      <ul>
+        <li>Liquidity added</li>
+        <li>Website & memes go live</li>
+        <li>Contests & NFT airdrops</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>3. Peak Experience</h2>
+      <ul>
+        <li>DEX listings (Jupiter, Raydium)</li>
+        <li>Collabs & DAO launched</li>
+        <li>Merch drop</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>4. Integration</h2>
+      <ul>
+        <li>TripPoints system</li>
+        <li>NFT staking & events</li>
+        <li>Bicycle Day burn party</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>5. Eternal Vibes</h2>
+      <ul>
+        <li>Support psychedelic research</li>
+        <li>Bridge to other chains</li>
+        <li>Community decides next ride</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Made with cosmic vibes. Hofmann would be proud.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const connectWalletButton = document.getElementById('connectWallet');
+
+      async function connectWallet() {
+        if (window?.phantom?.solana?.isPhantom) {
+          try {
+            const resp = await window.phantom.solana.connect();
+            alert('Connected to wallet: ' + resp.publicKey.toString());
+          } catch (err) {
+            console.error(err);
+            alert('Wallet connection failed.');
+          }
+        } else {
+          alert('Phantom wallet not found. Please install it from https://phantom.app');
+        }
+      }
+
+      connectWalletButton.addEventListener('click', connectWallet);
+    });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BicycleTrip - Ride the Psychedelic Wave</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+      background-size: 400% 400%;
+      animation: psychedelicBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes psychedelicBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    p.tagline {
+      font-size: 1rem;
+      margin-top: 0;
+      color: #ffeecc;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: #ff6f91;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Press Start 2P', cursive;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .roadmap {
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px dashed #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .stage {
+      margin-bottom: 2rem;
+    }
+
+    .stage h2 {
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+
+    .stage ul {
+      list-style: square;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+      padding-left: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .stage ul {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BicycleTrip</h1>
+    <p class="tagline">Ride the Psychedelic Wave on Solana</p>
+    <button id="connectWallet">Connect Wallet</button>
+  </header>
+
+  <section class="roadmap">
+    <h1>Tripmap</h1>
+
+    <div class="stage">
+      <h2>1. Microdose</h2>
+      <ul>
+        <li>Concept born: homage to Bicycle Day</li>
+        <li>Token & branding complete</li>
+        <li>Socials & community setup</li>
+        <li>TRIP token minted</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>2. Come-Up</h2>
+      <ul>
+        <li>Liquidity added</li>
+        <li>Website & memes go live</li>
+        <li>Contests & NFT airdrops</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>3. Peak Experience</h2>
+      <ul>
+        <li>DEX listings (Jupiter, Raydium)</li>
+        <li>Collabs & DAO launched</li>
+        <li>Merch drop</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>4. Integration</h2>
+      <ul>
+        <li>TripPoints system</li>
+        <li>NFT staking & events</li>
+        <li>Bicycle Day burn party</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>5. Eternal Vibes</h2>
+      <ul>
+        <li>Support psychedelic research</li>
+        <li>Bridge to other chains</li>
+        <li>Community decides next ride</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Made with cosmic vibes. Hofmann would be proud.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const connectWalletButton = document.getElementById('connectWallet');
+
+      async function connectWallet() {
+        if (window?.phantom?.solana?.isPhantom) {
+          try {
+            const resp = await window.phantom.solana.connect();
+            alert('Connected to wallet: ' + resp.publicKey.toString());
+          } catch (err) {
+            console.error(err);
+            alert('Wallet connection failed.');
+          }
+        } else {
+          alert('Phantom wallet not found. Please install it from https://phantom.app');
+        }
+      }
+
+      connectWalletButton.addEventListener('click', connectWallet);
+    });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BicycleTrip - Ride the Psychedelic Wave</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', cursive;
+      background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+      background-size: 400% 400%;
+      animation: psychedelicBG 15s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes psychedelicBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    p.tagline {
+      font-size: 1rem;
+      margin-top: 0;
+      color: #ffeecc;
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background: #ff6f91;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Press Start 2P', cursive;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .roadmap {
+      background: rgba(0, 0, 0, 0.3);
+      border: 2px dashed #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .stage {
+      margin-bottom: 2rem;
+    }
+
+    .stage h2 {
+      font-size: 1.2rem;
+      color: #ffd700;
+    }
+
+    .stage ul {
+      list-style: square;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+      padding-left: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      font-size: 0.75rem;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .stage ul {
+        font-size: 0.75rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BicycleTrip</h1>
+    <p class="tagline">Ride the Psychedelic Wave on Solana</p>
+    <button id="connectWallet">Connect Wallet</button>
+  </header>
+
+  <section class="roadmap">
+    <h1>Tripmap</h1>
+
+    <div class="stage">
+      <h2>1. Microdose</h2>
+      <ul>
+        <li>Concept born: homage to Bicycle Day</li>
+        <li>Token & branding complete</li>
+        <li>Socials & community setup</li>
+        <li>TRIP token minted</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>2. Come-Up</h2>
+      <ul>
+        <li>Liquidity added</li>
+        <li>Website & memes go live</li>
+        <li>Contests & NFT airdrops</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>3. Peak Experience</h2>
+      <ul>
+        <li>DEX listings (Jupiter, Raydium)</li>
+        <li>Collabs & DAO launched</li>
+        <li>Merch drop</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>4. Integration</h2>
+      <ul>
+        <li>TripPoints system</li>
+        <li>NFT staking & events</li>
+        <li>Bicycle Day burn party</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <h2>5. Eternal Vibes</h2>
+      <ul>
+        <li>Support psychedelic research</li>
+        <li>Bridge to other chains</li>
+        <li>Community decides next ride</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Made with cosmic vibes. Hofmann would be proud.
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const connectWalletButton = document.getElementById('connectWallet');
+
+      async function connectWallet() {
+        if (window?.phantom?.solana?.isPhantom) {
+          try {
+            const resp = await window.phantom.solana.connect();
+            alert('Connected to wallet: ' + resp.publicKey.toString());
+          } catch (err) {
+            console.error(err);
+            alert('Wallet connection failed.');
+          }
+        } else {
+          alert('Phantom wallet not found. Please install it from https://phantom.app');
+        }
+      }
+
+      connectWalletButton.addEventListener('click', connectWallet);
+    });
+  </script>
+</body>
+</html>
