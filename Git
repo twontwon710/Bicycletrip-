@@ -1,0 +1,12 @@
+bicycletrip.xyz/
+├── index.html
+├── pages/
+│   ├── tokenomics.html
+│   └── nft-gallery.html
+├── assets/
+│   ├── logo.png
+│   └── favicon.ico
+├── js/
+│   ├── wallet.js
+│   └── nft-viewer.js
+└── README.md
